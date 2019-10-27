@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: premaidai_description
+    relative_path: robots/premaidai.urdf.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/premaidai.srdf
+  CONFIG:
+    author_name: chikuta
+    author_email: takeshi.chiku@gmail.com
+    generated_timestamp: 1572159177
