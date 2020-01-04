@@ -7,5 +7,5 @@ moveit_setup_assistant_config:
     relative_path: config/premaidai.srdf
   CONFIG:
     author_name: chikuta
-    author_email: takeshi.chiku@gmail.com
-    generated_timestamp: 1572159177
+    author_email: chikuta@hoge
+    generated_timestamp: 1574074903

@@ -41,6 +41,16 @@ joint_state_controller:
   type: joint_state_controller/JointStateController
   publish_rate: 50
 controller_list:
+  - name: rarm_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - r_shy_joint
+      - r_shx_joint
+      - r_ely_joint
+      - r_elx_joint
+      - r_wry_joint
   - name: larm_controller
     action_ns: follow_joint_trajectory
     default: True
@@ -81,33 +91,6 @@ controller_list:
       - l_kny_joint
       - l_aky_joint
       - l_akx_joint
-  - name: leg_controller
-    action_ns: follow_joint_trajectory
-    default: True
-    type: FollowJointTrajectory
-    joints:
-      - l_hpz_joint
-      - l_hpx_joint
-      - l_hpy_joint
-      - l_kny_joint
-      - l_aky_joint
-      - l_akx_joint
-      - r_hpz_joint
-      - r_hpx_joint
-      - r_hpy_joint
-      - r_kny_joint
-      - r_aky_joint
-      - r_akx_joint
-  - name: rarm_controller
-    action_ns: follow_joint_trajectory
-    default: True
-    type: FollowJointTrajectory
-    joints:
-      - r_shy_joint
-      - r_shx_joint
-      - r_ely_joint
-      - r_elx_joint
-      - r_wry_joint
   - name: wholebody_controller
     action_ns: follow_joint_trajectory
     default: True
